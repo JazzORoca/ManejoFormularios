@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio Formulario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="recursos/Estilos.css" />
+
+        <script type="text/javascript" src="recursos/Funciones.js"></script>
+    
+    </head>
+    <body>
+        <form name="form1" action="/ManejoFormularioHTML/Servlet" method="post" 
+              onsubmit="return validarForma(this)">
+            <input  type="hidden" name="oculto"  value="valorOculto">
+            <table width="200" id="enfasis-columna">
+                <caption>
+                    
+                    Formulario Registro de Datos
+                    <tr>
+                        
+                        <td class="columna">Usuario:(*)</td>  
+                        <td >
+                            <input class="default" type="text" name="usuario"
+                                   value="escribir usuario" onfocus="this.select()"/>
+                        </td    
+                    </tr>  <!-- es renglon y td es table data--> 
+                    <tr>
+                        <td class="columna">
+                           Password: (*)     
+                        </td>  
+                        <td>
+                            <input class="default" type="password" name="password"
+                                   onfocus="this.select()"   />
+                        </td>
+                        
+                    </tr> 
+                    
+                    <tr>
+                        <td class="columna">
+                            Tecnologías de Internet    
+                        </td>  
+                        <td>
+                            Java <input type="checkbox" name="tecnologia" value="java"/>
+                            &nbsp;&nbsp;&nbsp;
+                            .Net <input type="checkbox" name="tecnologia" value="net"/>
+                            &nbsp;&nbsp;&nbsp;
+                            PHP<input type="checkbox" name="tecnologia" value="php"/>
+
+
+
+                        </td>
+
+                    </tr> 
+                    <tr>
+                        <td class="columna">
+                            Genero: (*)   
+                        </td>  
+                        <td>
+                            hombre<input type="radio" name="genero"  value="h" />     
+                             &nbsp;&nbsp;&nbsp;
+                             mujer<input type="radio" name="genero"  value="m" />     
+                             
+
+                        </td>
+
+                    </tr> 
+                    <tr>
+                        <td class="columna">
+                            Ocupacion: (*)   
+                        </td>  
+                        <td>
+                            <select name="ocupacion" class="default">
+                                <option value="default">Seleccionar</option>
+                                <option value="1">Profesor</option>
+                                <option value="2">Ingeniero</option>
+                                <option value="3">Jubilado</option>
+                                <option value="4">otro</option>
+                            </select>
+
+
+                        </td>
+
+                    </tr> 
+                                    
+                    
+                    <tr>
+                        <td class="columna">
+                            Musica favorita :   
+                        </td>  
+                        <td>
+                            <select name="musica" multiple class="default">
+
+                                <option value="rock">rock</option>
+                                <option value="pop">pop</option>
+                                <option value="salsa">salsa</option>
+                            </select>
+
+
+                        </td>
+
+                    </tr>     
+                    
+                    <tr>
+                        <td class="columna">
+                           comentario :   
+                        </td>  
+                        <td>
+                         
+                                   
+                                <textarea name="comentarios" cols="30"
+                                      rows="2" class="default" onfocus="this.select()" >
+                                     Escribir un texto         
+                            </textarea>
+
+                        </td>
+
+                    </tr>  
+                    <tr style="text-align:center ">
+                     
+                        <td>
+                            <input type="reset" value="limpiar" class="default"/>
+                        </td> 
+                           <td>
+                            <input type="submit" value="enviar" class="default"/>
+                        </td> 
+                    </tr>
+                </caption> 
+                
+                
+                
+            </table>
+            
+        </form>
+        
+        
+        
+        
+        
+        
+        <h1></h1>
+    </body>
+</html>
